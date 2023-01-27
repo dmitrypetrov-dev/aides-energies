@@ -552,6 +552,10 @@ span.--amaranth {
     cursor: pointer;
 }
 
+.faq__item.active {
+    height: 100% !important;
+}
+
 .faq__question {
     padding: 26px 72px 26px 28px;
     position: relative;
@@ -565,7 +569,7 @@ span.--amaranth {
     top: 44%;
     right: 5%;
     background: url(../img/svg/arrow.svg) center no-repeat;
-    transition: all .4s linear;
+    transition: all .4s ease;
 }
 
 .faq__item.active .faq__question::before {
