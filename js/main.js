@@ -1,17 +1,33 @@
-// faq
-
 $(document).ready(function () {
-    $(".faq__item").each(function () {
-        let $height = $(this).outerHeight();
-        $(this).css('height', $height + 'px');
-        $(this).click(function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).find(".faq__answer").css("display", "none");
-            } else {
-                $(this).addClass('active');
-                $(this).find(".faq__answer").slideDown(400, "linear");
-            }
+
+    //smooth scroll
+    $(".cta").click(function (e) {
+        e.preventDefault();
+        let $targetEl = $(this).attr("href");
+        $('html,body').animate({
+            scrollTop: $($targetEl).offset().top
+        }, 'slow');
+    });
+
+    // faq
+    $(".faq__item").click(function () {
+        $(this).toggleClass('active');
+        $(this).find(".faq__answer").slideToggle();
+    });
+
+    // mobile slider
+    $(document).ready(function () {
+        $(".slider").slick({
+            arrows: false,
+            dots: false,
+            infinite: false,
+            fade: false,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            speed: 1000,
+            centerMode: true,
+            centerPadding: '1rem',
+            slidesToShow: 1,
         });
     });
 
