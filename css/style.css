@@ -265,7 +265,7 @@ input, textarea {
     .hero {
         padding-top: 5rem;
         padding-bottom: 5rem;
-        background-image: none;
+        background-image: url(../img/hero-mb.png);
     }
 
     .hero__wrapper {
@@ -286,7 +286,7 @@ input, textarea {
     }
 
     .hero__form {
-        position: static;
+        position: relative;
     }
 
 }
