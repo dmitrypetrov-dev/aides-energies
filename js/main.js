@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //smooth scroll
-    $(".cta").click(function (e) {
+    $(".anchor-link").click(function (e) {
         e.preventDefault();
         let $targetEl = $(this).attr("href");
         $('html,body').animate({
