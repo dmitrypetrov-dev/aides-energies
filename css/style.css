@@ -135,6 +135,8 @@ input, textarea {
 
 .hero__left {
     max-width: 33.75rem;
+    position: relative;
+    z-index: 50;
 }
 
 .hero__title {
@@ -159,7 +161,6 @@ input, textarea {
     color: #fff;
     padding: 0.5rem 0 0.5rem 1.375rem;
     background: url(../img/svg/bullet.svg) 0 45% no-repeat;
-    background-size: 2%;
 }
 
 .hero__list-item span {
@@ -279,6 +280,10 @@ input, textarea {
 
     .hero__title {
         font-size: 1.625rem;
+    }
+
+    .hero__list-item {
+        font-size: 0.8125rem;
     }
 
     .hero__left .cta {
