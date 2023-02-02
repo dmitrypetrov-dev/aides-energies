@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    //form submit
+    $(".form").submit(function(event) {
+        event.preventDefault();
+        let post_url = $(this).attr("action");
+        let form_data = $(this).serialize();
+        $.post(post_url, form_data, function() {
+            alert('Thanks you!');
+        });
+    });
 
     //smooth scroll
     $(".anchor-link").click(function (e) {
