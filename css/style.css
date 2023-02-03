@@ -67,7 +67,7 @@ input, textarea {
 
 @media screen and (max-width: 767px) {
     .container {
-        padding: 0 1rem;
+        padding: 0 1.1rem;
     }
 }
 
@@ -280,6 +280,12 @@ input, textarea {
 
     .hero__title {
         font-size: 1.625rem;
+        text-align: center;
+    }
+
+    .hero__list {
+        margin-bottom: 2rem;
+        padding-left: 1rem;
     }
 
     .hero__list-item {
